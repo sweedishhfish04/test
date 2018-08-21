@@ -45,3 +45,11 @@ button:hover {
     text-decoration: none;
     cursor: pointer;
 }
+.submit {
+    margin: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: blue;
+    color: white;
+}
