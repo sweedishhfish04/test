@@ -35,6 +35,19 @@
     text-decoration: none;
     cursor: pointer;
 }
+.closeLogin {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeLogin:hover,
+.closeLogin:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 button {
     border: none;
     background: none;
