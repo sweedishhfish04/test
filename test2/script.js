@@ -7,6 +7,15 @@ var btn = document.getElementById("signup");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+// Get the modal
+var modalLogin = document.getElementById('modalLogin');
+
+// Get the button that opens the modal
+var btnLogin = document.getElementById("login");
+
+// Get the <span> element that closes the modal
+var spanLogin = document.getElementsByClassName("closeLogin")[0];
+
 // When the user clicks the button, open the modal 
 btn.onclick = function () {
     modal.style.display = "block";
@@ -23,15 +32,6 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
-
-// Get the modal
-var modalLogin = document.getElementById('modalLogin');
-
-// Get the button that opens the modal
-var btnLogin = document.getElementById("login");
-
-// Get the <span> element that closes the modal
-var spanLogin = document.getElementsByClassName("closeLogin")[0];
 
 // When the user clicks the button, open the modal 
 btnLogin.onclick = function () {
