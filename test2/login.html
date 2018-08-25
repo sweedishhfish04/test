@@ -9,101 +9,52 @@
     <button id="signup">Signup</button>
 
     <!-- The Modal -->
-    <div id="modal" class="modal">
+    <div id="modalLogin" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="form">
 
-                <ul class="tab-group">
-                    <li class="tab active">
-                        <a href="#signup">Sign Up</a>
-                    </li>
-                    <li class="tab">
-                        <a href="#login">Log In</a>
-                    </li>
-                </ul>
-
-                <div class="tab-content">
-                    <div id="signupForm">
-                        <h1>Sign Up</h1>
-
-                        <form action="/" method="post">
-
-                            <div class="top-row">
-                                <div class="field-wrap">
-                                    <label>
-                                        First Name
-                                        <span class="req">*</span>
-                                    </label>
-                                    <input type="text" required autocomplete="off" />
-                                </div>
-
-                                <div class="field-wrap">
-                                    <label>
-                                        Last Name
-                                        <span class="req">*</span>
-                                    </label>
-                                    <input type="text" required autocomplete="off" />
-                                </div>
-                            </div>
-
-                            <div class="field-wrap">
-                                <label>
-                                    Email Address
-                                    <span class="req">*</span>
-                                </label>
-                                <input type="email" required autocomplete="off" />
-                            </div>
-
-                            <div class="field-wrap">
-                                <label>
-                                    Set A Password
-                                    <span class="req">*</span>
-                                </label>
-                                <input type="password" required autocomplete="off" />
-                            </div>
+                <div id="loginForm">
+                    <h1>Welcome Back!</h1>
+                
+                    <form action="/" method="post">
+                
+                        <div class="field-wrap">
+                            <label>
+                                Email Address
+                                <span class="req">*</span>
+                            </label>
+                            <input type="email" required autocomplete="off" />
+                        </div>
+                
+                        <div class="field-wrap">
+                            <label>
+                                Password
+                                <span class="req">*</span>
+                            </label>
+                            <input type="password" required autocomplete="off" />
+                        </div>
+                
+                        <button class="submit" class="button button-block">Log In</button>
+                
 
                             <button class="submit" type="submit" class="button button-block">Get Started</button>
 
                         </form>
 
                     </div>
-
-                    <div id="loginForm">
-                        <h1>Welcome Back!</h1>
-
-                        <form action="/" method="post">
-
-                            <div class="field-wrap">
-                                <label>
-                                    Email Address
-                                    <span class="req">*</span>
-                                </label>
-                                <input type="email" required autocomplete="off" />
-                            </div>
-
-                            <div class="field-wrap">
-                                <label>
-                                    Password
-                                    <span class="req">*</span>
-                                </label>
-                                <input type="password" required autocomplete="off" />
-                            </div>
-
-                            <button class="submit" class="button button-block">Log In</button>
-
-                        </form>
-
-                    </div>
+                    </form>
 
                 </div>
-                <!-- tab-content -->
 
             </div>
-            <!-- /form -->
+            <!-- tab-content -->
+
         </div>
+        <!-- /form -->
+    </div>
 
     </div>
 
@@ -113,16 +64,12 @@
 
         // Get the button that opens the modal
         var btn = document.getElementById("login");
-        var btn2 = document.getElementById("signup");
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal 
         btn.onclick = function () {
-            modal.style.display = "block";
-        }
-        btn2.onclick = function () {
             modal.style.display = "block";
         }
 
@@ -142,3 +89,34 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
