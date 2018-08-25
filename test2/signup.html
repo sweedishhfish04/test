@@ -50,18 +50,44 @@
 
                             <div class="field-wrap">
                                 <label>
-                                    Set A Password
+                                    Set a Password
                                     <span class="req">:</span>
                                 </label>
                                 <input type="password" required autocomplete="off" />
                             </div>
 
-                            <div class="field-wrap">
+                            <div class="field-wrap" class="languages">
                                 <label>
-                                    Set A Password
+                                    Languages you know (check Native Language)
                                     <span class="req">:</span>
+                                    <br>
                                 </label>
-                                <input type="password" required autocomplete="off" />
+                                <form class="languages">
+                                    <input type="text">
+                                    <input type="radio" name="1" value="1">1
+                                    <input type="radio" name="2" value="2">2
+                                    <input type="radio" name="3" value="3">3
+                                    <input type="radio" name="4" value="4">4
+                                    <input type="radio" name="5" value="5">5
+                                    <input type="checkbox">
+                                    <br>
+                                    <input type="text">
+                                    <input type="radio" name="1" value="1">1
+                                    <input type="radio" name="2" value="2">2
+                                    <input type="radio" name="3" value="3">3
+                                    <input type="radio" name="4" value="4">4
+                                    <input type="radio" name="5" value="5">5
+                                    <input type="checkbox">
+                                    <br>
+                                    <input type="text">
+                                    <input type="radio" name="1" value="1">1
+                                    <input type="radio" name="2" value="2">2
+                                    <input type="radio" name="3" value="3">3
+                                    <input type="radio" name="4" value="4">4
+                                    <input type="radio" name="5" value="5">5
+                                    <input type="checkbox">
+                                    <br>
+                                </form>
                             </div>
 
                             <button class="submit" type="submit" class="button button-block">Get Started</button>
@@ -82,63 +108,35 @@
 
     </div>
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById('modal');
+    <div id="modalLogin" class="modal">
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("signup");
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeLogin">&times;</span>
+            <div class="form">
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+                <div id="loginForm">
+                    <h1>Welcome Back!</h1>
 
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
+                    <form action="/" method="post">
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
+                        <div class="field-wrap">
+                            <label>
+                                Email Address
+                                <span class="req">:</span>
+                            </label>
+                            <input type="email" required autocomplete="off" />
+                        </div>
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+                        <div class="field-wrap">
+                            <label>
+                                Password
+                                <span class="req">:</span>
+                            </label>
+                            <input type="password" required autocomplete="off" />
+                        </div>
 
-<div id="modalLogin" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="closeLogin">&times;</span>
-        <div class="form">
-
-            <div id="loginForm">
-                <h1>Welcome Back!</h1>
-            
-                <form action="/" method="post">
-            
-                    <div class="field-wrap">
-                        <label>
-                            Email Address
-                            <span class="req">:</span>
-                        </label>
-                        <input type="email" required autocomplete="off" />
-                    </div>
-            
-                    <div class="field-wrap">
-                        <label>
-                            Password
-                            <span class="req">:</span>
-                        </label>
-                        <input type="password" required autocomplete="off" />
-                    </div>
-            
-                    <button class="submit" class="button button-block">Log In</button>
+                        <button class="submit" class="button button-block">Log In</button>
 
                     </form>
 
@@ -152,37 +150,11 @@
 
     </div>
     <!-- /form -->
-</div>
+    </div>
 
-</div>
-
-<script>
-    // Get the modal
-    var modalLogin = document.getElementById('modalLogin');
-
-    // Get the button that opens the modal
-    var btnLogin = document.getElementById("login");
-
-    // Get the <span> element that closes the modal
-    var spanLogin = document.getElementsByClassName("closeLogin")[0];
-
-    // When the user clicks the button, open the modal 
-    btnLogin.onclick = function () {
-        modalLogin.style.display = "block";
-    }
-    // When the user clicks on <span> (x), close the modal
-    spanLogin.onclick = function () {
-        modalLogin.style.display = "none";
-    }   
-
-    // When the user clicks anywhere outside of the modal, close it
-    windowLogin.onclick = function (event) {
-        if (event.target == modalLogin) {
-            modalLogin.style.display = "none";
-        }
-    }
-</script>
-
+    </div>
 </body>
+
+<script type="text/javascript" src="script.js"></script>
 
 </html>
