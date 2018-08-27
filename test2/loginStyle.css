@@ -99,17 +99,18 @@ button:hover {
 .tab {
     display: inline-block;
     height: 50px;
-    width: 348px;
+    width: 355px;
     padding: 5px;
     margin: 0;
+    color: white
 }
 
 .unselected {
-    background-color: white;
+    background-color: maroon;
 }
 
 .unselected:hover {
-    background-color: lightgray;
+    background-color: blue;
 }
 
 .form {

@@ -48,3 +48,17 @@ loginButton.onclick = function () {
     signupTab.classList.add('unselected');
     loginTab.classList.remove('unselected');
 }
+// When the user clicks the tab, switch the form 
+loginTab.onclick = function () {
+    loginForm.style.display = "block";
+    signupForm.style.display = "none";
+    signupTab.classList.add('unselected');
+    loginTab.classList.remove('unselected');
+}
+// When the user clicks the tab, switch the form
+signupTab.onclick = function () {
+    loginForm.style.display = "none";
+    signupForm.style.display = "block";
+    signupTab.classList.remove('unselected');
+    loginTab.classList.add('unselected');
+}
