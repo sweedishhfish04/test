@@ -14,7 +14,7 @@ var signupForm = document.getElementById("signupForm");
 
 var loginForm = document.getElementById("loginForm");
 
-var signupTab = document.getElementById("signTab");
+var signupTab = document.getElementById("signupTab");
 
 var loginTab = document.getElementById("loginTab");
 
