@@ -2,43 +2,49 @@
 var modal = document.getElementById('modal');
 
 // Get the button that opens the signup modal
-var btn = document.getElementById("signup");
+var signupButton = document.getElementById("signup");
 
 // Get the <span> element that closes the signup modal
-var span = document.getElementsByClassName("close")[0];
-
-// Get the login modal
-var modalLogin = document.getElementById('modalLogin');
+var modalClose = document.getElementsByClassName("close")[0];
 
 // Get the button that opens the login modal
-var btnLogin = document.getElementById("login");
+var loginButton = document.getElementById("login");
 
-// Get the <span> element that closes the login modal
-var spanLogin = document.getElementsByClassName("closeLogin")[0];
+var signupForm = document.getElementById("signupForm");
+
+var loginForm = document.getElementById("loginForm");
+
+var signupTab = document.getElementById("signTab");
+
+var loginTab = document.getElementById("loginTab");
 
 // When the user clicks the button, open the modal 
-btn.onclick = function () {
+signupButton.onclick = function () {
     modal.style.display = "block";
+    signupForm.style.display = "block";
+    loginTab.classList.add('unselected');
+    signupTab.classList.remove('unselected');
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+modalClose.onclick = function () {
     modal.style.display = "none";
+    signupForm.style.display = "none";
+    loginForm.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        } else if (event.target == modalLogin) {
-            modalLogin.style.display = "none";
-        }
+    if (event.target == modal) {
+        modal.style.display = "none";
+        signupForm.style.display = "none";
+        loginForm.style.display = "none";
     }
-        // When the user clicks the button, open the modal 
-        btnLogin.onclick = function () {
-            modalLogin.style.display = "block";
-        }
-        // When the user clicks on <span> (x), close the modal
-        spanLogin.onclick = function () {
-            modalLogin.style.display = "none";
-        }
+}
+// When the user clicks the button, open the modal 
+loginButton.onclick = function () {
+    modal.style.display = "block";
+    loginForm.style.display = "block";
+    signupTab.classList.add('unselected');
+    loginTab.classList.remove('unselected');
+}

@@ -1,4 +1,7 @@
 /* The Modal (background) */
+* {
+    box-sizing: border-box;
+}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -17,7 +20,7 @@
 .modal-content {
     background-color: tan;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 0px;
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
 }
@@ -75,4 +78,23 @@ button:hover {
     border-radius: 8px;
     background: blue;
     color: white;
+}
+
+.tab {
+    display: inline-block;
+    height: 40px;
+    width: 50%;
+    margin: 0;
+
+}
+
+.unselected {
+    background-color: white;
+}
+.unselected:hover {
+    background-color: lightgray;
+}
+
+.form{
+    margin: 20px;
 }
